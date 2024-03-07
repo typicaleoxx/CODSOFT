@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #02084b; /* Dark blue background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #a5addb;
+            padding: 10px;
+            background-color: #ffffff; /* White background */
+            border-radius: 5px;
+            box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .result {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color: #000000; /* Black text */
+        }
+        .btn-back {
+            display: block;
+            width: 100px;
+            margin: auto;
+            background-color: #02084b; /* Dark blue button */
+            color: #ffffff; /* White text */
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn-back:hover {
+            background-color: #004b87; /* Darker blue hover effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Result</h1>
+        <div class="result">
+            The result is: <strong>{{ ans }}</strong>
+        </div>
+        <a href="{% url 'home' %}" class="btn-back">Go Back</a>
+    </div>
+</body>
+</html>
+
